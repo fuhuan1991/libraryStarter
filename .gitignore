@@ -1,0 +1,8 @@
+website/.docz/
+node_modules/
+yarn-error.log
+build/
+lib/
+.rpt2_cache/
+junit.xml
+.vscode/

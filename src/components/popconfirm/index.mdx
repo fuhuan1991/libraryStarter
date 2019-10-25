@@ -1,0 +1,17 @@
+---
+name: Popconfirm
+menu: Components
+---
+import Popconfirm from './index';
+import { PropsTable, Playground } from 'docz'
+
+
+# popconfirm
+
+<Playground>
+  <Popconfirm title="Are you sure delete this task?" onConfirm={()=>{}} onCancel={()=>{}} okText="Yes" cancelText="No">
+    <a href="#">Delete</a>
+  </Popconfirm>
+</Playground>
+
+<PropsTable of={Popconfirm} />

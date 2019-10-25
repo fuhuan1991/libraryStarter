@@ -1,0 +1,31 @@
+---
+name: List
+menu: Components
+---
+
+import { Playground } from 'docz'
+import List from './index'
+import 'antd/lib/table/style/index.css';
+import 'antd/lib/pagination/style/index.css';
+
+# List
+
+## 简介
+
+关于这个组件的介绍。。。
+
+## Examples
+<Playground>
+  <List 
+    columns = {[
+        { title: '标题', dataIndex: 'name', render: (text) => <a href='https://www.baidu.com'>{text}</a> },
+        { title: '人数', dataIndex: 'userNum', width: 150, className: 'align-right' },
+        { title: '创建人', dataIndex: 'creator', width: 150 }
+    ]}
+    dataSource = {[
+        { key: 1, name: '百度', userNum: 69, creator: '姜曼' }
+    ]}
+  />
+</Playground>
+
+## API

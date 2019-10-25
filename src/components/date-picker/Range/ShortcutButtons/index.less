@@ -1,0 +1,29 @@
+@import "../../../../stylesheet/variables.less";
+.gio-datepicker-shortcut-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    .range {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        line-height: 18px;
+        padding: 6px 0 6px 15px;
+        cursor: pointer;
+        color: #999;
+        margin: 0;
+        user-select: none;
+        &:hover {
+            color: #ea6947;
+        }
+    }
+    .active {
+        color: #ea6947;
+    }
+    .since {
+        display: inline-block;
+        position: relative;
+    }
+}

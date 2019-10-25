@@ -1,0 +1,82 @@
+{
+    "extends": [
+      "tslint:recommended",
+      "tslint-react"
+    ],
+    "rules": {
+      "ban": [
+        true,
+        [
+          "Object",
+          "assign",
+          "use TS2.1 object spread { ...a, ...b }"
+        ],
+        [
+          "describe",
+          "only"
+        ],
+        [
+          "it",
+          "only"
+        ]
+      ],
+      "jsx-no-lambda": false,
+      "jsx-no-multiline-js": false,
+      "arrow-parens": false,
+      "jsx-boolean-value": false,
+      "no-var-requires": false,
+      "no-shadowed-variable": false,
+      "interface-name": false,
+      "linebreak-style": [
+        true,
+        "LF"
+      ],
+      "no-invalid-this": [
+        true,
+        "check-function-in-method"
+      ],
+      "ordered-imports": [
+        false
+      ],
+      "object-literal-sort-keys": false,
+      "semicolon": [
+        false
+      ],
+      "quotemark": [
+        true,
+        "single",
+        "jsx-single"
+      ],
+      "variable-name": [
+        "ban-keywords",
+        "check-format",
+        "allow-pascal-case"
+      ],
+      "max-line-length": [
+        false
+      ],
+      "trailing-comma": [
+        true,
+        {
+          "multiline": "ignore",
+          "singleline": "never"
+        }
+      ]
+    },
+    "jsRules": {
+      "object-literal-shorthand": true,
+      "trailing-comma": [
+        true,
+        {
+          "multiline": "ignore",
+          "singleline": "never"
+        }
+      ]
+    },
+    "linterOptions": {
+      "exclude": [
+        "**/*.js",
+        "**/*.jsx"
+      ]
+    }
+  }

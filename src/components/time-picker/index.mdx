@@ -1,0 +1,21 @@
+---
+name: TimePicker
+menu: Components
+---
+
+import { PropsTable, Playground } from 'docz';
+import TimePicker from './index';
+import moment from 'moment';
+
+# TimePicker
+
+## 简介
+简单包装了AntInput.TimePicker
+
+## Examples
+<Playground>
+  <TimePicker defaultValue={moment('13:30:56', 'HH:mm:ss')} />
+</Playground>
+
+## API
+<PropsTable of={TimePicker} />

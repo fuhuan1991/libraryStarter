@@ -1,0 +1,89 @@
+input.gio-input,
+.gio-input input {
+  /*.gio-input类名可以施加在一个span元素上，input是他的子元素，比如搜索输入框。也可以施加在一个input元素上，比如普通的输入框。 */
+  padding: 9px 10px;
+  font-family: "PingFang SC";
+  border: 1px solid #ebebeb;
+  color: #333;
+  height: 32px;
+  font-size: 14px;
+  vertical-align: middle;
+
+  &.large {
+    height: 40px;
+    padding: 13px 10px;
+  }
+  &.small {
+    height: 32px;
+    padding: 9px 10px;
+  }
+  &:disabled {
+    border-color: #ebebeb!important;
+
+    &:hover {
+      border-color: #ebebeb!important;
+    }
+  }
+  &:hover:not(:disabled) {
+    border-color: #222F73!important;
+  }
+  &:focus,
+  &:active:not(:disabled) {
+    border-color: #222F73!important;
+    box-shadow: 0 0 4px 0 rgba(102,102,102,0.5);
+  }
+ 
+  &.gio-input--error {
+    border-color: #F55252!important;
+    &:hover {
+      border-color: #F55252!important;
+    }
+    &:focus,
+    &:active {
+      border-color: #F55252!important;
+      box-shadow: 0 0 4px 0 rgba(102,102,102,0.5);
+    }
+  }
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #CCCCCC!important;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: #CCCCCC!important;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: #CCCCCC!important;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: #CCCCCC!important;
+  }
+}
+
+.gio-input.large input {
+  height: 40px;
+  padding: 13px 10px;
+}
+.gio-input.small input {
+  height: 32px;
+  padding: 9px 10px;
+}
+
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
+  border-color: #222F73;
+}
+.ant-input-affix-wrapper .ant-input:focus:not(.ant-input-disabled) {
+  border-color: #222F73;
+  box-shadow: 0 0 4px 0 rgba(102,102,102,0.5);
+}
+
+/* 对应了使用antd提供的Form组件的情况。当输入出错时input元素的一个父元素会被加上一个‘has-error’类 */
+.has-error input.gio-input{
+  border-color: #F55252!important;
+  &:hover {
+    border-color: #F55252!important;
+  }
+  &:focus,
+  &:active {
+    border-color: #F55252!important;
+    box-shadow: 0 0 4px 0 rgba(102,102,102,0.5);
+  }
+}

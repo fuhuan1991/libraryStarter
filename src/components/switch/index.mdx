@@ -1,0 +1,31 @@
+---
+name: Switch
+menu: Components
+---
+
+import { PropsTable, Playground } from 'docz';
+import Switch from './index';
+import Button from '../button';
+
+# Switch
+
+## 简介
+开关选择器，简单包装了Antd.Switch
+
+## Examples
+<Playground>
+  <div>
+    <Switch checkedChildren="开" unCheckedChildren="关" />
+    <br />
+    <Switch value={false} loading={'true'} />
+    <br />
+    <Switch checked></Switch> checked
+    <br />
+    <Switch disabled></Switch> disabled
+    <br />
+    <Switch size="small" /> small
+  </div>
+</Playground>
+
+API
+<PropsTable of={Switch} />

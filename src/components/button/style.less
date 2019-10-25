@@ -1,0 +1,124 @@
+@import '../../styleSheet/index.less';
+
+.gio-btn{
+  font-size: @default-font-size-3;
+  color: @default-color-text-inverse;
+  cursor: pointer;
+  border-radius: @border-radius-small;
+  &.gio-btn-with-bg{
+    &.large{
+      padding: 0px 20px;
+      height: 32px;
+    }
+    &.middle{
+      padding: 0px 15px;
+      height: 30px;
+    }
+    &.small{
+      padding: 0px 10px;
+      height: 28px;
+    }
+    &.gio-btn-primary{
+      background-color: @default-color-background-brand-primary;
+      border: @default-color-background-brand-primary;
+      &:hover{
+        background-color: @color-orange-3;
+        border: @color-orange-3;
+        color: @default-color-text-inverse;
+      }
+      &:active{
+        background-color: @color-orange-5;
+        border: @color-orange-5;
+        color: @default-color-text-inverse;
+      }
+      &:focus{
+        color: @default-color-text-inverse;
+      }
+    }
+    &.gio-btn-secondary{
+      background-color: @color-purple-4;
+      border: @color-purple-4;
+      &:hover{
+        background-color: @color-purple-3;
+        border: @color-purple-3;
+        color: @default-color-text-inverse;
+      }
+      &:active{
+        background-color: @color-purple-5;
+        border: @color-purple-5;
+        color: @default-color-text-inverse;
+      }
+      &:focus{
+        color: @default-color-text-inverse;
+      }
+    }
+    &.gio-btn-subtle{
+      background-color: @color-gray-1;
+      border: @color-gray-2;
+      color: @color-purple-3;
+      &.large{
+        padding: 0px 15px;
+      }
+      &:hover{
+        background-color: @color-gray-3;
+        border: @color-gray-3;
+        color: @color-purple-3;
+      }
+      &:active{
+        background-color: @color-gray-5;
+        border: @color-gray-5;
+      }
+      &:focus{
+        color: @color-purple-3;
+      }
+    }
+    &.disabled{
+      color: @default-color-text-disable;
+      background-color: @color-gray-2;
+      border: @color-gray-2;
+      &:hover{
+        background-color: @color-gray-2;
+        border: @color-gray-2;
+        color: @default-color-text-disable;
+      }
+      &:active{
+        background-color: @color-gray-2;
+        border: @color-gray-2;
+        color: @default-color-text-disable;
+      }
+      &:focus{
+        color: @default-color-text-disable;
+      }
+    }
+  }
+  &.gio-btn-without-bg{
+    &.gio-btn-primary{
+      color: @default-color-background-brand-primary;
+      &:hover{
+        color:  @color-orange-3;
+      }
+      &:active{
+        color: @color-orange-5;
+      }
+    }
+    &.gio-btn-secondary,&.gio-btn-subtle{
+      color: @color-purple-4;
+      &:hover{
+        color: @color-purple-3;
+      }
+      &:active{
+        color: @color-purple-4;
+      }
+    }
+    &.disabled{
+      color: @default-color-text-disable;
+      cursor: not-allowed;
+      &:hover{
+        color: @default-color-text-disable;
+      }
+      &:active{
+        color: @default-color-text-disable;
+      }
+    }
+  }
+}

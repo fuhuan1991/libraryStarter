@@ -1,0 +1,33 @@
+---
+name: Textarea
+menu: Components
+---
+
+import { PropsTable, Playground } from 'docz';
+import Textarea from './index';
+import Button from '../button';
+
+
+# Textarea
+
+## 简介
+简单包装了AntInput.Textarea
+
+## Examples
+<Playground>
+    <Textarea
+        rows={2}
+        placeholder='Hello, 请输入文案'
+        disabled
+      />
+    <br />
+    <br />
+    <Textarea
+        rows={3}
+        placeholder='Hello, 请输入文案'
+        disabled={false}
+      />
+</Playground>
+
+## API
+<PropsTable of={Textarea} />
