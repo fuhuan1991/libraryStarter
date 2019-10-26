@@ -16,12 +16,12 @@
     "compile_js_file_to_lib": "NODE_ENV=build rollup --config ./scripts/rollup.config.lib.js",
     "compile_css_file_to_lib": "NODE_ENV=build node ./scripts/rollup_Build_CSS_file.js",
     "test": "jest",
-    "test:xunit": "JEST_JUNIT_CLASSNAME=\"{filename}\" jest --ci --testResultsProcessor=jest-junit",
-    "docz": "cd website && npm run start"
+    "test:xunit": "JEST_JUNIT_CLASSNAME=\"{filename}\" jest --ci --testResultsProcessor=jest-junit"
   },
   "keywords": [
-    "raect",
-    "antd"
+    "react",
+    "typescript",
+    "rollup.js"
   ],
   "author": "fuhuan",
   "devDependencies": {
